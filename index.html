@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>just.jxck.it</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css">
+<!--    <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">-->
+</head>
+<body>
+  <div id="app"></div>
+    <!-- Configuration -->
+    <style>
+        :root {
+            --base-color: #4792e6;
+            --content-max-width: 75em;
+            --base-background-color: white;
+            --sidebar-background: #2a2a2a0d;
+            --sidebar-toggle-background: #2a2a2a0d;
+            --sidebar-toggle-offset-left: 12px;
+            --sidebar-toggle-offset-top: 26px;
+            --sidebar-toggle-border-color: #2a2a2a0a;
+            --sidebar-toggle-border-radius: 6px;
+            --sidebar-toggle-border-width: 1px;
+            --sidebar-nav-indent: 2em;
+            --sidebar-nav-pagelink-background: none;
+            --sidebar-nav-pagelink-background--active: none;
+            --sidebar-width: 25rem;
+            --sidebar-nav-link-color: black;
+            --sidebar-nav-pagelink-padding: 4px 4px 16px 4px;
+            --search-input-background-image: none;
+            --search-input-background-color: #2a2a2a0a;
+            --search-input-padding: 16px 4px 16px 28px;
+            --sidebar-nav-margin: 2.5rem 0 0;
+            --sidebar-nav-link-text-decoration--hover: none;
+            --base-color: var(--mono-shade2);
+            --sidebar-nav-link-color--hover: #4792e6;
+            --sidebar-nav-link-font-weight--active: bold;
+            --base-font-size: 15px;
+            --theme-hue: 400;
+        }
+        .content {
+            padding-top: 0px;
+        }
+
+        .content > .markdown-section {
+            padding-top: 16px;
+        }
+
+        .search {
+            position: absolute;
+            width: 100%;
+            top: 80px;
+            border-top: 2px solid #EEEEEE;
+            z-index: 10;
+            background-color: #FFFFFF;
+        }
+
+        .sidebar {
+            user-select: none;
+        }
+
+        .sidebar > h1 {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 100%;
+        }
+
+        .sidebar > h1 img {
+            width: 240px;
+            transition: 0.2s;
+        }
+
+        .sidebar > h1 img:hover {
+            opacity: 0.5;
+        }
+
+        .sidebar-nav {
+            position: absolute;
+            width: 100%;
+            top: 150px;
+        }
+
+    </style>
+    <script>
+        window.$docsify = {
+            name: 'just.jxck.it',
+            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+            autoHeader: false,
+            auto2top: true,
+            themeColor: "#4792e6",
+            logo: '/_media/logo.svg',
+            executeScript: true,
+            homepage: "index.md",
+            onlyCover: false,
+            coverpage: false,
+            loadNavbar: false,
+            mergeNavbar: false,
+            loadSidebar: true,
+            maxLevel: 4,
+            subMaxLevel: 2,
+            loadFooter: false,
+            notFoundPage: true,
+            search: {
+                placeholder: 'Search',
+            },
+            count:{
+                countable: true,
+                isExpected: true,
+                position: 'top',
+                float: 'right',
+                margin: "0px",
+                fontsize:'1em',
+            },
+            progress: {
+                position: "top",
+                color: "var(--theme-color,#42b983)",
+                height: "3px",
+            },
+            themeable: {
+                readyTransition : true,
+                responsiveTables: true
+            }
+        }
+    </script>
+    <!-- Docsify v4 Deps -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+<!--    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>-->
+<!--    <script src="//cdn.jsdelivr.net/npm/docsify-example-panels"></script>-->
+<!--    <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>-->
+<!--    <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>-->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script> -->
+<!--    <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>-->
+<!--    <script src="//unpkg.com/docsify-glossary/dist/docsify-glossary.min.js"></script>-->
+<!--    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>-->
+<!--    <script src="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest"></script>-->
+
+    <!-- Service Worker -->
+    <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+    }
+    </script>
+</body>
+</html>

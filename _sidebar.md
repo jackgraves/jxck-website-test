@@ -1,0 +1,6 @@
+* [Home](/)
+* [Blog](blog/index.md)
+* [Experience](/experience)
+* [Strategy](strategy/index.md)
+* [Development](development/index.md)
+* [Projects](product/index.md)

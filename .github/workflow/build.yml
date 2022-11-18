@@ -1,0 +1,17 @@
+name: Pipeline
+on:
+    push:
+        branches: [ "main" ]
+workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+steps:
+    - uses: actions/checkout@v3
+    - uses: tool3/docsify-action@master
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        dir: .
+        branch: gh-pages
