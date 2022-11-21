@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css">
-<!--    <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">-->
+    <!--<link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">-->
 </head>
 <body>
   <div id="app"></div>
@@ -20,21 +20,20 @@
             --base-background-color: white;
             --sidebar-background: #2a2a2a0d;
             --sidebar-toggle-background: #2a2a2a0d;
-            --sidebar-toggle-offset-left: 12px;
-            --sidebar-toggle-offset-top: 26px;
             --sidebar-toggle-border-color: #2a2a2a0a;
-            --sidebar-toggle-border-radius: 6px;
+            --sidebar-toggle-border-radius: 0px 6px 6px 0px;
             --sidebar-toggle-border-width: 1px;
+            --sidebar-toggle-offset-top: 30px;
             --sidebar-nav-indent: 2em;
             --sidebar-nav-pagelink-background: none;
             --sidebar-nav-pagelink-background--active: none;
             --sidebar-width: 20rem;
             --sidebar-nav-link-color: black;
-            --sidebar-nav-pagelink-padding: 4px 4px 16px 4px;
+            --sidebar-nav-pagelink-padding: 0px 0px 4px 4px;
             --search-input-background-image: none;
             --search-input-background-color: #2a2a2a0a;
             --search-input-padding: 16px 4px 16px 28px;
-            --sidebar-nav-margin: 2.5rem 0 0;
+            --sidebar-nav-margin: 1rem 0 0;
             --sidebar-nav-link-text-decoration--hover: none;
             --base-color: var(--mono-shade2);
             --sidebar-nav-link-color--hover: #4792e6;
@@ -42,6 +41,7 @@
             --base-font-size: 15px;
             --theme-hue: 400;
         }
+
         .content {
             padding-top: 0px;
         }
@@ -68,6 +68,10 @@
             top: 8px;
             left: 0;
             width: 100%;
+        }
+
+        .sidebar li {
+            padding: 8px;
         }
 
         .sidebar > h1 img {
@@ -134,15 +138,15 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 
-<!--    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/docsify-example-panels"></script>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>-->
-    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script> -->
-<!--    <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>-->
-<!--    <script src="//unpkg.com/docsify-glossary/dist/docsify-glossary.min.js"></script>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/docsify-example-panels"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script> -->
+    <!--<script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>-->
+    <!--<script src="//unpkg.com/docsify-glossary/dist/docsify-glossary.min.js"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>-->
+    <!--<script src="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest"></script>-->
 
     <!-- Service Worker -->
     <script>
